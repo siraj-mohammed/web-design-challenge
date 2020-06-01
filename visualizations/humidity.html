@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WeatherPlot</title>
+
+	<!-- Get Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+
+	<!-- WeatherPlot stylesheet-->
+	<link rel="stylesheet" href="../assets/style/style.css">
+
+</head>
+<body>
+	<!-- Navbar Begins -->
+	<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+		<a class="navbar-brand nav-link" href="../index.html" id=logo>WeatherPlot</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="../visualizations/temperature.html">Max Temperature</a>
+						<a class="dropdown-item" href="../visualizations/humidity.html">Humidity</a>
+						<a class="dropdown-item" href="../visualizations/cloudiness.html">Cloudiness</a>
+						<a class="dropdown-item" href="../visualizations/windspeed.html">Wind Speed</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../visualizations/comparison.html">Comparison</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../visualizations/data.html">Data</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Navbar Ends -->
+
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-lg-8">
+				<div class="col-lg-12 section">
+					<span class="sectionTitle">Humidity</span>
+					<hr>
+					<img src="../assets/images/Fig2.png" width="100%">
+					<p> The distance of a city from the Equator does not seem to have an effect on humidity. In the sample studied, more cities in the Northern
+						hemisphere had higher humidity than those in the Southern hemisphere. </p>
+				</div>
+			</div>
+			<div class="col-lg-4 ml-auto section">
+				<div class="col-lg-12 section">
+					<span class="sectionTitle"> Visualizations </span>
+					<hr>
+					<div class="row">
+						<div class="col-md-6">
+							<a href="../visualizations/temperature.html">
+								<img alt="Temperature" src="../assets/images/Fig1.png" width="100%">
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a href="../visualizations/humidity.html">
+								<img alt="Humidity" src="../assets/images/Fig2.png" width="100%">
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a href="../visualizations/cloudiness.html">
+								<img alt="Cloudiness" src="../assets/images/Fig3.png" width="100%">
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a href="../visualizations/windspeed.html">
+								<img alt="WindSpeed" src="../assets/images/Fig4.png" width="100%">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="footer mt-auto py-3">
+		<span>&copy; Copyright WeatherPlot </span>
+	</footer>
+
+</body>
+
+</html>
